@@ -28,6 +28,11 @@ The current demo mission case simulates:
 - team conflict
 - cognitive overload
 - repeated issue pattern
+### Example Run Output
+
+Below is a sample output from running the prototype:
+
+![MAGSBHO Output](output_screenshot.png)
 
 This leads to a governance decision of:
 
