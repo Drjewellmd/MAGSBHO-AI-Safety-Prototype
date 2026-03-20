@@ -132,6 +132,7 @@ Planned next steps to advance MAGSBHO toward research-grade validation include:
 - Future iterations will include human-labeled ground truth to evaluate escalation accuracy and false positive/false negative rates.
 - Future work will incorporate uncertainty estimation to handle ambiguous or conflicting agent signals.
 - Future work will incorporate temporal modeling to account for time-dependent dynamics, including the accumulation of repeated low-level stressors and trajectory-based changes in behavioral and cognitive states across mission duration.
+- - incorporating temporal modeling to capture time-dependent dynamics, including accumulation of repeated stressors and trajectory-based behavioral changes  
 
 ## How to Run the Scenario Runner
 ```bash
