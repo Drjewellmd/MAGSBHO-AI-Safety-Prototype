@@ -130,6 +130,7 @@ Planned next steps to advance MAGSBHO toward research-grade validation include:
 - evaluating escalation accuracy against human expert judgment  
 - extending toward clinically supervised architectures (QUARTET model)
 - Future iterations will include human-labeled ground truth to evaluate escalation accuracy and false positive/false negative rates.
+- Future work will incorporate uncertainty estimation to handle ambiguous or conflicting agent signals.
 
 ## How to Run the Scenario Runner
 ```bash
