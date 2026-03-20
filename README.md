@@ -128,7 +128,8 @@ Planned next steps to advance MAGSBHO toward research-grade validation include:
 - expanding scenario coverage and stress-testing edge cases  
 - integrating physiological and behavioral data streams  
 - evaluating escalation accuracy against human expert judgment  
-- extending toward clinically supervised architectures (QUARTET model)  
+- extending toward clinically supervised architectures (QUARTET model)
+- Future iterations will include human-labeled ground truth to evaluate escalation accuracy and false positive/false negative rates.
 
 ## How to Run the Scenario Runner
 ```bash
