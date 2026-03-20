@@ -8,7 +8,7 @@ This repository contains a Python prototype inspired by the **MAGSBHO (Multi-Age
 
 ## Purpose
 
-The goal of this prototype is to demonstrate a simple, interpretable implementation of a governance-constrained multi-agent system for high-risk environments such as space missions and other isolated, confined, and extreme (I.C.E.) settings.
+The goal of this prototype is to demonstrate a simple, interpretable implementation of a governance-constrained multi-agent system for high-risk environments such as space missions and other isolated, confined, and extreme (I.C.E.) settings. This work explores governance-constrained multi-agent systems as a safety architecture aligned with emerging research in scalable oversight and human-in-the-loop AI.
 
 ---
 
@@ -116,9 +116,20 @@ These results suggest that the governance logic appropriately balances:
 
 This supports the core design principle that no single agent acts autonomously in high-risk situations.
 
+### Limitations
+This prototype uses simplified rule-based logic and simulated inputs; future work will incorporate probabilistic modeling, real-time data streams, and validation in in-person analog environments.
+
 ---
+These findings support continued development and staged validation of governance-constrained multi-agent systems in high-risk environments.
 
-## Run the scenario runner
+## Future Work
 
+Planned next steps to advance MAGSBHO toward research-grade validation include:
+- expanding scenario coverage and stress-testing edge cases  
+- integrating physiological and behavioral data streams  
+- evaluating escalation accuracy against human expert judgment  
+- extending toward clinically supervised architectures (QUARTET model)  
+
+## How to Run the Scenario Runner
 ```bash
 py magsbho_scenario_runner.py
