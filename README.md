@@ -1,18 +1,14 @@
 MAGSBHO: Multi-Agent Governance System for Behavioral Health and Operations
+A governance-constrained multi-agent AI system for safe decision-making under uncertainty.
+
 Overview
-
 This project explores governance-constrained multi-agent artificial intelligence (AI) systems designed for high-risk environments where incorrect decisions carry operational, psychological, or ethical consequences.
-
 MAGSBHO (Multi-Agent Governance System for Behavioral Health and Operations) is a structured AI architecture designed to support safe, interpretable, and human-centered decision-making in complex environments, including analog astronaut missions and other isolated, confined, and extreme (I.C.E.) conditions.
 
 The system enforces:
-
 bounded autonomy
 structured escalation pathways
-human-in-the-loop (HITL) oversight
-
-and is evaluated through scenario-based simulations involving:
-
+human-in-the-loop (HITL) oversight and is evaluated through scenario-based simulations involving:
 stress escalation
 interpersonal conflict
 cognitive overload
