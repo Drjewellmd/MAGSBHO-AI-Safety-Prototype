@@ -1,139 +1,142 @@
-# MAGSBHO Prototype
+MAGSBHO: Multi-Agent Governance System for Behavioral Health and Operations
+Overview
 
-## Governance-Constrained Multi-Agent AI Safety Prototype
+This project explores governance-constrained multi-agent artificial intelligence (AI) systems designed for high-risk environments where incorrect decisions carry operational, psychological, or ethical consequences.
 
-This repository contains a Python prototype inspired by the **MAGSBHO (Multi-Agent Governance System for Behavioral Health)** framework.
+MAGSBHO (Multi-Agent Governance System for Behavioral Health and Operations) is a structured AI architecture designed to support safe, interpretable, and human-centered decision-making in complex environments, including analog astronaut missions and other isolated, confined, and extreme (I.C.E.) conditions.
 
----
+The system enforces:
 
-## Purpose
+bounded autonomy
+structured escalation pathways
+human-in-the-loop (HITL) oversight
 
-The goal of this prototype is to demonstrate a simple, interpretable implementation of a governance-constrained multi-agent system for high-risk environments such as space missions and other isolated, confined, and extreme (I.C.E.) settings. This work explores governance-constrained multi-agent systems as a safety architecture aligned with emerging research in scalable oversight and human-in-the-loop AI.
+and is evaluated through scenario-based simulations involving:
 
----
+stress escalation
+interpersonal conflict
+cognitive overload
+ambiguous and conflicting signals
 
-## What the prototype includes
+The goal is to study how AI systems behave under uncertainty, cumulative risk, and multi-agent disagreement, with a focus on safety, interpretability, and real-world deployment constraints.
 
-- **EVE**: wellness support agent for stress and emotional regulation  
-- **KIRK**: ethical / cohesion agent for conflict and team stability  
-- **SGG**: cognitive support agent for task load and clarity  
-- **Governance Layer**: combines agent outputs and determines bounded action  
+AI Safety Framing
 
----
+This work is motivated by a central AI safety question:
 
-## Core Safety Concept
+How do we ensure that AI systems make correct safety decisions—not just plausible ones—under real-world conditions?
 
-This prototype is built on a central AI safety principle:
+The MAGSBHO system is intentionally designed as:
 
-**No single agent acts autonomously in a high-risk situation.**
+an interpretable governance layer
+a testbed for failure mode analysis
+a foundation for future integration with learned models under strict safety constraints
 
-Instead, a governance layer evaluates combined agent outputs and determines whether to:
+Rather than optimizing for surface-level responses, this system prioritizes correct escalation behavior, transparency, and human oversight.
 
-- provide routine support  
-- support and monitor  
-- escalate to a human  
+System Architecture
 
----
+The MAGSBHO architecture consists of multiple specialized agents whose outputs are evaluated through a centralized governance layer.
 
-## EarthStar Protocol (“Do No Harm”)
+TRIAD Agent System
+KIRK — Ethical and operational stabilizer (Kindness, Integrity, Resilience, Kinship)
+EVE — Embodied Virtual Empath supporting emotional regulation and wellness
+SpaceGuardianGPT (SGG) — Individualized cognitive and operational support agent
+Governance Layer
 
-The system follows a safety-first constraint model inspired by the EarthStar protocol:
+The governance system:
 
-- prioritize human safety and psychological stability  
-- avoid harm, coercion, or overreach  
-- enforce escalation in high-risk conditions  
-- maintain transparency and bounded decision-making  
+evaluates agent outputs
+detects risk signals
+determines appropriate system response
 
----
+Possible system actions:
 
-## MMAARS★ Non-Tokenized Training Concept
+Monitor — no intervention required
+Guide — provide corrective or stabilizing input
+Escalate — trigger human oversight
+Simulation Framework
 
-The prototype is conceptually aligned with a non-tokenized training approach:
+The system is implemented using a Python-based simulation environment designed to test behavior under controlled scenarios.
 
-- individualized contextual learning rather than generic token prediction  
-- crew-specific behavioral adaptation  
-- human-centered interaction constraints  
-- prevention of unsafe generalization across contexts  
+Scenarios include:
+communication breakdowns
+interpersonal conflict
+stress accumulation
+ambiguous decision contexts
+repeated low-level risk exposure
 
----
+Each simulation evaluates how the system responds under increasing complexity and uncertainty.
 
-## Scenario Testing (Version 2)
+Safety Evaluation
 
-The prototype was extended into a multi-scenario simulation runner to evaluate governance decisions under varying operational conditions.
+The system has been evaluated through structured simulation scenarios to assess:
 
-### Features
-- Multiple structured scenarios  
-- Agent-level outputs (EVE, KIRK, SGG)  
-- Governance decision logic  
-- CSV export for analysis  
+Failure Modes
+false positives (over-escalation)
+false negatives (missed risks)
+conflicting agent outputs
+Escalation Behavior
+correctness of escalation pathways
+appropriate routing between monitor / guide / escalate states
+System Stability
+performance under sustained stress
+repeated issue accumulation over time
+consistency of responses across scenarios
 
-### Scenario Coverage
-- High Stress + Conflict  
-- Moderate Stress  
-- Cognitive Overload  
-- Low Risk  
-- Repeated Mild Stress  
-- High Conflict Only  
-- High Stress Only  
-- Borderline Mission Load  
-- Team Drift Pattern  
-- Operational Crisis  
+This evaluation framework prioritizes safety correctness over surface plausibility.
 
-### Output
-Simulation results are exported to `magsbho_simulation_results.csv`, enabling structured evaluation of escalation behavior and bounded autonomy.
-
----
-
-### Example Execution Output
+Example Execution Output
 
 See:
-- `simulation_run_part1.png`
-- `simulation_run_part2.png`
-- `simulation_summary.png`
+
+simulation_run_part1.png
+simulation_run_part2.png
+simulation_summary.png
 
 for full execution and summary results.
 
-These results demonstrate early-stage validation of governance-constrained decision-making under varying operational conditions.
+Key Insights
 
----
+Preliminary simulation results suggest that governance-constrained multi-agent systems can:
 
-## Preliminary Simulation Insights
+improve decision consistency under stress
+reduce escalation errors
+support structured and interpretable decision-making
+enhance coordination across multiple behavioral domains
 
-Initial scenario testing demonstrates that the governance layer consistently prioritizes safety by escalating in high-risk conditions.
+The TRIAD architecture demonstrates that separating ethical, cognitive, and emotional support functions across agents can improve system robustness.
 
-### Key Observations
-- High stress + conflict scenarios reliably triggered **ESCALATE_TO_HUMAN**  
-- Cognitive overload conditions were correctly identified and escalated  
-- Moderate and repeated issues resulted in **SUPPORT_AND_MONITOR**  
-- Low-risk scenarios remained within **ROUTINE_SUPPORT**  
+Limitations
 
-### Interpretation
-These results suggest that the governance logic appropriately balances:
+Current limitations of the system include:
 
-- safety-first escalation  
-- avoidance of unnecessary intervention  
-- bounded autonomy under lower-risk conditions  
+rule-based architecture (no learned models integrated yet)
+limited modeling of temporal dynamics
+simplified representation of human physiological and behavioral states
+constrained scenario diversity
+Future Work
 
-This supports the core design principle that no single agent acts autonomously in high-risk situations.
+Planned next steps include:
+expanding scenario coverage and stress-testing edge cases
+integrating physiological and behavioral data streams
+evaluating escalation accuracy against human expert judgment
+extending toward clinically supervised architectures (QUARTET model)
+modeling temporal dynamics, including:
+time-dependent escalation
+accumulation of low-level risk signals
+trajectory-based behavioral patterns
+integrating machine learning models under strict governance constraints
 
-### Limitations
-This prototype uses simplified rule-based logic and simulated inputs; future work will incorporate probabilistic modeling, real-time data streams, and validation in in-person analog environments.
+Why This Matters
+AI systems deployed in real-world environments must operate under uncertainty, incomplete information, and human stress.
 
----
-These findings support continued development and staged validation of governance-constrained multi-agent systems in high-risk environments.
+MAGSBHO contributes to understanding how governance-based architectures can:
+enforce safety constraints
+maintain interpretability
+support reliable decision-making in high-stakes environments
 
-## Future Work
+The long-term goal is to develop AI systems that are not only capable—but safe, aligned, and dependable under real-world conditions.
 
-Planned next steps to advance MAGSBHO toward research-grade validation include:
-- expanding scenario coverage and stress-testing edge cases  
-- integrating physiological and behavioral data streams  
-- evaluating escalation accuracy against human expert judgment  
-- extending toward clinically supervised architectures (QUARTET model)
-- Future iterations will include human-labeled ground truth to evaluate escalation accuracy and false positive/false negative rates.
-- Future work will incorporate uncertainty estimation to handle ambiguous or conflicting agent signals.
-- Future work will incorporate temporal modeling to account for time-dependent dynamics, including the accumulation of repeated low-level stressors and trajectory-based changes in behavioral and cognitive states across mission duration.
-- - incorporating temporal modeling to capture time-dependent dynamics, including accumulation of repeated stressors and trajectory-based behavioral changes  
-
-## How to Run the Scenario Runner
-```bash
-py magsbho_scenario_runner.py
+Repository
+GitHub: https://github.com/Drjewellmd/MAGSBHO-AI-Safety-Prototype
