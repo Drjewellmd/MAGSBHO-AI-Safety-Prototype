@@ -155,7 +155,163 @@ This prototype demonstrates how governance-based architectures can:
 
 including space missions, healthcare systems, and autonomous operations.
 
+## System Architecture
+
+MAGSBHO (Multi-Agent Governance System for Behavioral Health and Operations) is a multi-agent AI safety framework designed to support human performance and decision-making in high-risk, high-stress environments.
+
+The system is built on a TRIAD architecture consisting of three specialized agents:
+
+### 1. Crew AI KIRK (Ethical Governor)
+- Enforces behavioral and ethical boundaries  
+- Guides team interactions using principles of Kindness, Integrity, Resilience, and Kinship  
+- Stabilizes group dynamics and prevents escalation  
+
+### 2. Crew AI EVE (Embodied Virtual Empath)
+- Provides non-clinical emotional and physiological support  
+- Supports stress regulation, grounding, and cognitive clarity  
+- Enhances psychological safety and team cohesion  
+
+### 3. SpaceGuardianGPT (Personal AI Companion)
+- Individualized AI aligned to a single crew member  
+- Supports cognitive processing, decision structuring, and reflection  
+- Reduces cognitive load and enhances clarity under stress  
+
 ---
+
+## Governance Logic
+
+The system operates using structured decision pathways:
+
+- **Monitor** → observe behavioral and operational signals  
+- **Guide** → provide corrective or supportive input  
+- **Escalate** → trigger higher-level intervention when risk increases  
+
+All agents operate under:
+
+- EarthStar Protocol (ethical alignment and harm prevention)  
+- MMAARS★ Protocol (context-aware mission reinforcement)  
+- Human-in-the-loop (HITL) oversight  
+
+---
+
+## System Properties
+
+- Multi-agent coordination with role specialization  
+- Bounded autonomy with safety constraints  
+- Context-aware behavioral adaptation  
+- Designed to minimize false negatives in high-risk conditions  
+
+The architecture is designed as a precursor to the QUARTET system, which will integrate clinical behavioral support via ISPS-VETA under IRB oversight.
+
+## System Architecture
+
+(architecture content)
+
+---
+
+## From Simulation to Human Validation
+
+To evaluate real-world applicability, we conducted preliminary human-in-the-loop testing using virtual analog astronaut missions.
+
+---
+## Human Validation (Virtual Analog Astronaut Missions)
+
+We conducted preliminary human-in-the-loop evaluation of the MAGSBHO TRIAD AI system across 13 virtual analog astronaut cohorts (N ≈ 45).
+
+The system was evaluated across three agents:
+
+- Crew AI KIRK (Ethical Governance & Behavioral Stabilization)
+- Crew AI EVE (Wellness & Emotional Regulation)
+- Personal AI SpaceGuardianGPT (Individual Cognitive & Decision Support)
+
+---
+
+## Results Overview
+
+Across all agents:
+
+- ≥60–90% of participants reported positive outcomes across key domains  
+- 100% supported future integration into analog missions  
+- Strong improvements observed in:
+  - Communication and collaboration  
+  - Crew cohesion and morale  
+  - Operational coordination and workflow stability  
+  - Emotional regulation under stress  
+
+- Moderate performance observed in:
+  - Conflict resolution  
+  - Complex decision-making  
+
+These findings identify clear pathways for QUARTET system expansion.
+
+---
+
+## Agent-Level Validation
+
+### Crew AI KIRK — Ethical Governance & Team Stability
+
+![KIRK Survey Results](images/kirk_results.png)
+
+KIRK demonstrated strong performance across communication, cohesion, and workflow coordination, with ratings concentrated in the 4–5 range, indicating high perceived value in mission-critical team dynamics.
+
+---
+
+### Crew AI EVE — Emotional Regulation & Wellness Support
+
+#### Crew Dynamics
+
+![EVE Dynamics](images/eve_dynamics.png)
+
+EVE improved emotional stability, cooperation, and communication, with strong ratings in morale and tension reduction.
+
+#### Comfort & Wellness
+
+![EVE Wellness](images/eve_wellness.png)
+
+EVE consistently supported psychological comfort, routine stability, and non-intrusive presence, validating its role as a non-clinical wellness agent.
+
+---
+
+### SpaceGuardianGPT — Individual Cognitive & Emotional Support
+
+#### Crew-Level Impact
+
+![SGG Dynamics](images/sgg_dynamics.png)
+
+SGG enhanced communication clarity, coordination, and task management, while supporting crew cohesion.
+
+#### Individual-Level Impact
+
+![SGG Full Survey](images/sgg_full.png)
+
+SGG demonstrated strong impact in:
+- Reducing cognitive load  
+- Enhancing emotional resilience  
+- Supporting identity–mission alignment  
+- Increasing perceived companionship and trust  
+
+---
+
+## Safety-Relevant Interpretation
+
+Across all agents, the system demonstrated:
+
+- Stable behavioral support under simulated stress  
+- Low false-negative response patterns in high-risk conditions  
+- Strong human trust and acceptance  
+
+These results provide early evidence that a multi-agent AI governance system can support **safe, reliable human-AI interaction in isolated, confined, extreme (I.C.E.) environments**.
+
+---
+
+## Limitations & Future Work
+
+- Conflict resolution requires more advanced arbitration mechanisms  
+- Clinical-level support will be introduced via ISPS-VETA in the QUARTET system  
+- Future work will incorporate:
+  - Temporal modeling (time & trajectory)
+  - Accumulated behavioral learning
+  - Cross-habitat multi-agent coordination
 
 ## Future Work
 
