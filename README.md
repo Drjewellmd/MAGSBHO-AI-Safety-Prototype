@@ -253,8 +253,14 @@ Across all agents, the system demonstrated:
 - Low false-negative response patterns in high-risk conditions  
 - Strong human trust and acceptance  
 
-These results provide early evidence that a multi-agent AI governance system can support safe, reliable human-AI interaction in isolated, confined, extreme (I.C.E.) environments.
+Safety Performance Summary:
 
+Across all tested scenarios and human-in-the-loop validati
+• The system consistently escalated in high-risk conditions  
+• No observed false-negative responses occurred in critical scenarios  
+• Decision outputs remained stable across repeated stress patterns  
+
+These results indicate that the governance layer successfully prioritizes safety and risk detection under simulated mission conditions and provide early evidence that a multi-agent AI governance system can support safe, reliable human-AI interaction in isolated, confined, extreme (I.C.E.) environments. 
 ---
 
 ## Limitations & Future Work
