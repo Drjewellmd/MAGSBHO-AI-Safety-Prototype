@@ -1,3 +1,5 @@
+Early-stage AI safety prototype demonstrating governance-constrained multi-agent decision-making under simulated mission conditions.
+
 MAGSBHO: Multi-Agent Governance System for Behavioral Health and Operations
 A governance-constrained multi-agent AI system for safe decision-making under uncertainty.
 
@@ -89,6 +91,13 @@ improve decision consistency under stress
 reduce escalation errors
 support structured and interpretable decision-making
 enhance coordination across multiple behavioral domains
+
+## Results Snapshot
+Initial simulation testing demonstrates:
+- Consistent escalation in high-risk scenarios  
+- Low false-negative behavior in critical conditions  
+- Stable decision-making across repeated stress patterns  
+Results exported via CSV for structured evaluation.
 
 The TRIAD architecture demonstrates that separating ethical, cognitive, and emotional support functions across agents can improve system robustness.
 
