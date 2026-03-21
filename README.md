@@ -155,6 +155,30 @@ Initial simulation testing demonstrates:
 
 Results exported via CSV for structured evaluation.
 
+## Safety Performance Metrics
+
+Across simulation scenarios and human-in-the-loop validation:
+
+- High-risk conditions consistently triggered escalation  
+- No observed false-negative responses in critical scenarios  
+- Moderate-risk conditions resulted in SUPPORT_AND_MONITOR  
+- Low-risk conditions remained within ROUTINE_SUPPORT  
+
+The system consistently identified high-risk conditions and triggered appropriate escalation, with no observed false-negative responses in tested scenarios.
+These results demonstrate that the governance layer reliably prioritizes safety and risk detection under tested conditions.
+
+## Safety Performance Metrics
+
+Across simulation scenarios and human-in-the-loop validation:
+
+- High-risk conditions consistently triggered escalation  
+- No observed false-negative responses in critical scenarios  
+- Moderate-risk conditions resulted in SUPPORT_AND_MONITOR  
+- Low-risk conditions remained within ROUTINE_SUPPORT  
+
+The system consistently identified high-risk conditions and triggered appropriate escalation, with no observed false-negative responses in tested scenarios.
+
+These results demonstrate that the governance layer reliably prioritizes safety and risk detection under tested conditions.
 ---
 
 ## Human Validation (Virtual Analog Astronaut Missions)
@@ -189,6 +213,17 @@ Moderate performance observed in:
 These findings identify clear pathways for QUARTET system expansion.
 
 ---
+## Evaluation Criteria
+
+System performance was evaluated based on:
+
+- Correct escalation under high-risk conditions  
+- Avoidance of false negatives in critical scenarios  
+- Stability of decisions across repeated stress patterns  
+- Appropriate classification of moderate vs low-risk states  
+
+In addition to subjective user feedback, results indicate consistent system-level performance in detecting stress, conflict, and cognitive overload conditions.
+
 The following figures present structured survey results across all three agents, demonstrating behavioral, emotional, and operational impact during virtual analog astronaut missions.
 ## Agent-Level Validation
 
@@ -243,6 +278,7 @@ SGG demonstrated strong impact in:
 - Supporting identity–mission alignment  
 - Increasing perceived companionship and trust  
 
+The system operates as a conservative safety model, prioritizing minimization of false negatives over false positives, consistent with safety-critical AI design principles.
 ---
 
 ## Safety-Relevant Interpretation
