@@ -203,10 +203,6 @@ All agents operate under:
 
 The architecture is designed as a precursor to the QUARTET system, which will integrate clinical behavioral support via ISPS-VETA under IRB oversight.
 
-## System Architecture
-
-(architecture content)
-
 ---
 
 ## From Simulation to Human Validation
