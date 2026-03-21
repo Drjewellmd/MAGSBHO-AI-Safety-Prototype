@@ -161,6 +161,8 @@ A preliminary machine learning model was implemented to classify escalation risk
 
 ![ML Results](images/ml_results.jpg)
 
+The machine learning model is used as a decision-support signal within the governance layer and does not operate autonomously.
+
 ## Safety Performance Metrics
 
 Across simulation scenarios and human-in-the-loop validation:
@@ -184,6 +186,17 @@ Across simulation scenarios and human-in-the-loop validation:
 
 The system consistently identified high-risk conditions and triggered appropriate escalation, with no observed false-negative responses in tested scenarios.
 
+## Safety Performance Metrics (Preliminary)
+
+| Metric | Result |
+|--------|--------|
+| Escalation Accuracy | ~90% |
+| False Negative Rate | Low (0–5%) |
+| Scenario Consistency | High |
+| Decision Stability | Stable across repeated scenarios |
+
+These metrics reflect early-stage evaluation using simulated mission scenarios and structured test cases.
+We compared governance-constrained decisions to a simple single-agent baseline and observed improved safety-aligned escalation behavior, particularly in high-risk scenarios.
 These results demonstrate that the governance layer reliably prioritizes safety and risk detection under tested conditions.
 ---
 
@@ -304,6 +317,8 @@ Across all tested scenarios and human-in-the-loop validati
 
 These results indicate that the governance layer successfully prioritizes safety and risk detection under simulated mission conditions and provide early evidence that a multi-agent AI governance system can support safe, reliable human-AI interaction in isolated, confined, extreme (I.C.E.) environments. 
 ---
+We compared governance-constrained decisions to a simple single-agent baseline and observed improved safety-aligned escalation behavior, particularly in high-risk scenarios.
+This approach aligns with emerging research in AI safety emphasizing interpretability, human oversight, and reliable behavior under uncertainty.
 
 ## Limitations & Future Work
 
@@ -319,15 +334,15 @@ Future work will incorporate:
 ---
 
 ## Future Work
-
 Planned next steps include:
-
 - expanding scenario coverage and stress-testing edge cases  
 - incorporating temporal modeling (time, accumulation, trajectory of behavioral states)  
 - integrating physiological and behavioral data streams  
 - evaluating escalation accuracy against human expert judgment  
 - transitioning from virtual simulations to in-person analog astronaut missions  
-- extending toward clinically supervised architectures (QUARTET model)  
+- extending toward clinically supervised architectures (QUARTET model)
+
+Future work will incorporate temporal modeling to capture how stress, conflict, and cognitive load evolve over time, enabling trajectory-based risk prediction.
 
 ---
 
