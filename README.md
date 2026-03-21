@@ -155,6 +155,10 @@ Initial simulation testing demonstrates:
 
 Results exported via CSV for structured evaluation.
 
+### Machine Learning Extension (Preliminary)
+
+A preliminary machine learning model was implemented to classify escalation risk based on stress, conflict, and cognitive load features, demonstrating initial feasibility of data-driven risk detection within the MAGSBHO framework.
+
 ## Safety Performance Metrics
 
 Across simulation scenarios and human-in-the-loop validation:
