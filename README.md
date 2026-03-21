@@ -189,12 +189,14 @@ Moderate performance observed in:
 These findings identify clear pathways for QUARTET system expansion.
 
 ---
-
+The following figures present structured survey results across all three agents, demonstrating behavioral, emotional, and operational impact during virtual analog astronaut missions.
 ## Agent-Level Validation
 
 ### Crew AI KIRK — Ethical Governance & Team Stability
 
-KIRK Survey Results  
+![Figure 1: KIRK Survey Results](images/kirk_results.png)
+
+**Figure 1.** Crew AI KIRK demonstrated strong performance across communication, cohesion, and workflow coordination, with ratings concentrated in the 4–5 range, indicating high perceived value in mission-critical team dynamics.
 
 KIRK demonstrated strong performance across communication, cohesion, and workflow coordination, with ratings concentrated in the 4–5 range, indicating high perceived value in mission-critical team dynamics.
 
@@ -203,14 +205,17 @@ KIRK demonstrated strong performance across communication, cohesion, and workflo
 ### Crew AI EVE — Emotional Regulation & Wellness Support
 
 #### Crew Dynamics
+![Figure 2: EVE Crew Dynamics](images/eve_dynamics.png)
 
-EVE Dynamics  
+**Figure 2.** Crew AI EVE improved emotional stability, cooperation, and communication, with strong ratings in morale enhancement and tension reduction during simulated mission scenarios.
 
 EVE improved emotional stability, cooperation, and communication, with strong ratings in morale and tension reduction.
 
 #### Comfort & Wellness
 
-EVE Wellness  
+![Figure 3: EVE Wellness & Comfort](images/eve_wellness.png)
+
+**Figure 3.** Crew AI EVE supported psychological comfort, routine stability, and non-intrusive presence, reinforcing its role as a non-clinical wellness agent in isolated, confined environments.
 
 EVE consistently supported psychological comfort, routine stability, and non-intrusive presence, validating its role as a non-clinical wellness agent.
 
@@ -220,13 +225,16 @@ EVE consistently supported psychological comfort, routine stability, and non-int
 
 #### Crew-Level Impact
 
-SGG Dynamics  
+![Figure 4: SGG Crew Dynamics](images/sgg_dynamics.png)
 
+**Figure 4.** SpaceGuardianGPT enhanced communication clarity, coordination, and task management while supporting overall crew cohesion and operational performance.
 SGG enhanced communication clarity, coordination, and task management, while supporting crew cohesion.
 
 #### Individual-Level Impact
 
-SGG Full Survey  
+![Figure 5: SGG Full Survey Results](images/sgg_full.png)
+
+**Figure 5.** SpaceGuardianGPT demonstrated strong individual-level impact, including reduced cognitive load, enhanced emotional resilience, improved identity–mission alignment, and increased trust and perceived companionship.
 
 SGG demonstrated strong impact in:
 
