@@ -178,7 +178,7 @@ We extended the machine learning component to a multi-class model predicting gov
 
 This improves alignment between machine learning outputs and the MAGSBHO governance layer by mapping data-driven risk signals directly to safety-constrained decision pathways.
 
-![Multi-Class ML Governance Model Output](images/ml_v2_results.jpeg)
+![Multi-Class ML Governance Model Output](images/ml_v2_resultss.jpeg)
 
 **Multi-Class ML Governance Model Output.** Preliminary model output showing governance-action predictions based on stress, conflict, cognitive load, and repeated issue features. Predictions are used strictly as decision-support signals and do not replace governance-layer control or human oversight.
 
