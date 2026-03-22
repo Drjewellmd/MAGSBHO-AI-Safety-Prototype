@@ -172,6 +172,15 @@ The machine learning model is used as a decision-support signal within the gover
 We extended the model to a multi-class ML system predicting governance actions, improving alignment between data-driven signals and safety-constrained decision-making.
 
 ---
+### Multi-Class ML Governance Extension
+
+We extended the machine learning component to a multi-class model predicting governance actions: **routine support**, **support and monitor**, and **escalate to human**.
+
+This improves alignment between machine learning outputs and the MAGSBHO governance layer by mapping data-driven risk signals directly to safety-constrained decision pathways.
+
+![Multi-Class ML Governance Model Output](images/ml_v2_results.jpeg)
+
+**Multi-Class ML Governance Model Output.** Preliminary model output showing governance-action predictions based on stress, conflict, cognitive load, and repeated issue features. Predictions are used strictly as decision-support signals and do not replace governance-layer control or human oversight.
 
 ## Safety Performance Metrics
 
