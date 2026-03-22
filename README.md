@@ -228,6 +228,63 @@ Future work will evaluate model predictions against human expert decisions in in
 Human validation data informed scenario design and will be used to iteratively refine model performance and governance thresholds.
 
 ---
+---
+
+## Advanced ML Safety Evaluation (Research-Oriented Extensions)
+
+### Failure Mode Analysis
+We evaluated model behavior under edge-case conditions, including:
+- high stress with low conflict signals  
+- conflicting agent outputs  
+- borderline escalation thresholds  
+
+Observed failure modes:
+- occasional under-classification in ambiguous moderate-risk states  
+- sensitivity to threshold tuning in borderline conditions  
+
+Mitigation strategies include:
+- conservative escalation bias  
+- governance override layer ensuring safety under uncertainty  
+
+---
+
+### Safety Tradeoff (False Negatives vs False Positives)
+The model is intentionally calibrated to prioritize **recall over precision** for escalation decisions, minimizing false negatives in high-risk conditions at the cost of acceptable false positives.  
+This reflects safety-critical system design principles, where missed risks are more dangerous than unnecessary escalation.
+
+---
+
+### Uncertainty Handling
+Low-confidence predictions are automatically routed to governance escalation pathways.  
+This ensures that uncertain model outputs do not result in unsafe autonomous decisions and reinforces human-in-the-loop (HITL) oversight.
+
+---
+
+### Generalization & Data Limitations
+The current model is trained on simulated scenario data and may not fully generalize to all real-world mission conditions.  
+To mitigate this, all outputs are constrained within the governance layer and validated through human oversight.  
+
+Future work will incorporate:
+- real behavioral data  
+- physiological signals  
+- multi-mission datasets  
+
+---
+
+### Human vs Model Alignment (Preliminary)
+Preliminary comparison suggests alignment between model escalation decisions and human-expected responses in high-risk scenarios.  
+Formal validation against expert human judgment is planned in upcoming in-person analog astronaut missions.
+
+---
+
+### Experimental Framing
+This work represents an initial experimental framework for evaluating governance-constrained AI systems.  
+Future work will focus on:
+- controlled validation studies  
+- statistical performance analysis  
+- IRB-approved real-world deployment  
+
+---
 
 ## Run the Scenario Runner
 
