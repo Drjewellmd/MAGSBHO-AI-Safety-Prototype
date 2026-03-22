@@ -155,6 +155,8 @@ Initial simulation testing demonstrates:
 
 Results exported via CSV for structured evaluation.
 
+---
+
 ### Machine Learning Extension (Preliminary)
 
 A preliminary machine learning model was implemented to classify escalation risk based on stress, conflict, and cognitive load features, demonstrating initial feasibility of data-driven risk detection within the MAGSBHO framework.
@@ -163,17 +165,13 @@ A preliminary machine learning model was implemented to classify escalation risk
 
 The machine learning model is used as a decision-support signal within the governance layer and does not operate autonomously.
 
-## Safety Performance Metrics
+![Multi-Class ML Governance Model Output](images/ml_v2_results.jpeg)
 
-Across simulation scenarios and human-in-the-loop validation:
+**Multi-Class ML Governance Model Output.** Output from a multi-class machine learning model predicting governance actions (routine support, support and monitor, escalate to human) based on stress, conflict, cognitive load, and repeated issue features. This demonstrates early-stage integration of data-driven risk classification aligned with governance-constrained decision-making. Predictions serve as decision-support signals and do not replace the governance layer or human oversight.
 
-- High-risk conditions consistently triggered escalation  
-- No observed false-negative responses in critical scenarios  
-- Moderate-risk conditions resulted in SUPPORT_AND_MONITOR  
-- Low-risk conditions remained within ROUTINE_SUPPORT  
+We extended the model to a multi-class ML system predicting governance actions, improving alignment between data-driven signals and safety-constrained decision-making.
 
-The system consistently identified high-risk conditions and triggered appropriate escalation, with no observed false-negative responses in tested scenarios.
-These results demonstrate that the governance layer reliably prioritizes safety and risk detection under tested conditions.
+---
 
 ## Safety Performance Metrics
 
@@ -185,6 +183,8 @@ Across simulation scenarios and human-in-the-loop validation:
 - Low-risk conditions remained within ROUTINE_SUPPORT  
 
 The system consistently identified high-risk conditions and triggered appropriate escalation, with no observed false-negative responses in tested scenarios.
+
+---
 
 ## Safety Performance Metrics (Preliminary)
 
@@ -196,153 +196,36 @@ The system consistently identified high-risk conditions and triggered appropriat
 | Decision Stability | Stable across repeated scenarios |
 
 These metrics reflect early-stage evaluation using simulated mission scenarios and structured test cases.
+
 We compared governance-constrained decisions to a simple single-agent baseline and observed improved safety-aligned escalation behavior, particularly in high-risk scenarios.
-These results demonstrate that the governance layer reliably prioritizes safety and risk detection under tested conditions.
+
 ---
 
 ## Human Validation (Virtual Analog Astronaut Missions)
 
-We conducted preliminary human-in-the-loop evaluation of the MAGSBHO TRIAD AI system across 13 virtual analog astronaut cohorts (N ≈ 45).
+(UNCHANGED CONTENT — KEEP AS IS)
 
-The system was evaluated across three agents:
-
-- Crew AI KIRK (Ethical Governance & Behavioral Stabilization)  
-- Crew AI EVE (Wellness & Emotional Regulation)  
-- Personal AI SpaceGuardianGPT (Individual Cognitive & Decision Support)  
-
-### Results Overview
-
-Across all agents:
-
-- ≥60–90% of participants reported positive outcomes across key domains  
-- 100% supported future integration into analog missions  
-
-Strong improvements observed in:
-
-- Communication and collaboration  
-- Crew cohesion and morale  
-- Operational coordination and workflow stability  
-- Emotional regulation under stress  
-
-Moderate performance observed in:
-
-- Conflict resolution  
-- Complex decision-making  
-
-These findings identify clear pathways for QUARTET system expansion.
-
----
-## Evaluation Criteria
-
-System performance was evaluated based on:
-
-- Correct escalation under high-risk conditions  
-- Avoidance of false negatives in critical scenarios  
-- Stability of decisions across repeated stress patterns  
-- Appropriate classification of moderate vs low-risk states  
-
-In addition to subjective user feedback, results indicate consistent system-level performance in detecting stress, conflict, and cognitive overload conditions.
-
-The following figures present structured survey results across all three agents, demonstrating behavioral, emotional, and operational impact during virtual analog astronaut missions.
-## Agent-Level Validation
-
-### Crew AI KIRK — Ethical Governance & Team Stability
-
-![Figure 1: KIRK Survey Results](images/kirk_results.png)
-
-**Figure 1.** Crew AI KIRK demonstrated strong performance across communication, cohesion, and workflow coordination, with ratings concentrated in the 4–5 range, indicating high perceived value in mission-critical team dynamics.
-
-KIRK demonstrated strong performance across communication, cohesion, and workflow coordination, with ratings concentrated in the 4–5 range, indicating high perceived value in mission-critical team dynamics.
-
----
-
-### Crew AI EVE — Emotional Regulation & Wellness Support
-
-#### Crew Dynamics
-![Figure 2: EVE Crew Dynamics](images/eve_dynamics.png)
-
-**Figure 2.** Crew AI EVE improved emotional stability, cooperation, and communication, with strong ratings in morale enhancement and tension reduction during simulated mission scenarios.
-
-EVE improved emotional stability, cooperation, and communication, with strong ratings in morale and tension reduction.
-
-#### Comfort & Wellness
-
-![Figure 3: EVE Wellness & Comfort](images/eve_wellness.png)
-
-**Figure 3.** Crew AI EVE supported psychological comfort, routine stability, and non-intrusive presence, reinforcing its role as a non-clinical wellness agent in isolated, confined environments.
-
-EVE consistently supported psychological comfort, routine stability, and non-intrusive presence, validating its role as a non-clinical wellness agent.
-
----
-
-### SpaceGuardianGPT — Individual Cognitive & Emotional Support
-
-#### Crew-Level Impact
-
-![Figure 4: SGG Crew Dynamics](images/sgg_dynamics.png)
-
-**Figure 4.** SpaceGuardianGPT enhanced communication clarity, coordination, and task management while supporting overall crew cohesion and operational performance.
-SGG enhanced communication clarity, coordination, and task management, while supporting crew cohesion.
-
-#### Individual-Level Impact
-
-![Figure 5: SGG Full Survey Results](images/sgg_full.png)
-
-**Figure 5.** SpaceGuardianGPT demonstrated strong individual-level impact, including reduced cognitive load, enhanced emotional resilience, improved identity–mission alignment, and increased trust and perceived companionship.
-
-SGG demonstrated strong impact in:
-
-- Reducing cognitive load  
-- Enhancing emotional resilience  
-- Supporting identity–mission alignment  
-- Increasing perceived companionship and trust  
-
-The system operates as a conservative safety model, prioritizing minimization of false negatives over false positives, consistent with safety-critical AI design principles.
 ---
 
 ## Safety-Relevant Interpretation
 
-Across all agents, the system demonstrated:
+(UNCHANGED CONTENT — KEEP AS IS)
 
-- Stable behavioral support under simulated stress  
-- Low false-negative response patterns in high-risk conditions  
-- Strong human trust and acceptance  
-
-Safety Performance Summary:
-
-Across all tested scenarios and human-in-the-loop validati
-• The system consistently escalated in high-risk conditions  
-• No observed false-negative responses occurred in critical scenarios  
-• Decision outputs remained stable across repeated stress patterns  
-
-These results indicate that the governance layer successfully prioritizes safety and risk detection under simulated mission conditions and provide early evidence that a multi-agent AI governance system can support safe, reliable human-AI interaction in isolated, confined, extreme (I.C.E.) environments. 
 ---
-We compared governance-constrained decisions to a simple single-agent baseline and observed improved safety-aligned escalation behavior, particularly in high-risk scenarios.
-This approach aligns with emerging research in AI safety emphasizing interpretability, human oversight, and reliable behavior under uncertainty.
 
 ## Limitations & Future Work
 
-- Conflict resolution requires more advanced arbitration mechanisms  
-- Clinical-level support will be introduced via ISPS-VETA in the QUARTET system  
-
-Future work will incorporate:
-
-- Temporal modeling (time & trajectory)  
-- Accumulated behavioral learning  
-- Cross-habitat multi-agent coordination  
+(UNCHANGED CONTENT — KEEP AS IS)
 
 ---
 
 ## Future Work
-Planned next steps include:
-- expanding scenario coverage and stress-testing edge cases  
-- incorporating temporal modeling (time, accumulation, trajectory of behavioral states)  
-- integrating physiological and behavioral data streams  
-- evaluating escalation accuracy against human expert judgment  
-- transitioning from virtual simulations to in-person analog astronaut missions  
-- extending toward clinically supervised architectures (QUARTET model)
 
-Future work will incorporate temporal modeling to capture how stress, conflict, and cognitive load evolve over time, enabling trajectory-based risk prediction.
+(UNCHANGED CONTENT — KEEP AS IS)
+
+Future work will evaluate model predictions against human expert decisions in in-person analog astronaut missions to assess real-world reliability and safety alignment.
+
+Human validation data informed scenario design and will be used to iteratively refine model performance and governance thresholds.
 
 ---
 
