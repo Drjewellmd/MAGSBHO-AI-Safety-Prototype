@@ -179,6 +179,7 @@ This improves alignment between machine learning outputs and the MAGSBHO governa
 ![Multi-Class ML Governance Model Output](images/ml_v2_resultss.jpeg)
 
 **Multi-Class ML Governance Model Output.** Preliminary model output showing governance-action predictions based on stress, conflict, cognitive load, and repeated issue features. Predictions are used strictly as decision-support signals and do not replace governance-layer control or human oversight.
+
 Machine Learning Extension (ML v3 — Governance Model)
 The MAGSBHO system includes a machine learning extension (ML v3) designed to support governance-constrained decision-making in safety-critical environments.
 This model predicts appropriate governance actions based on behavioral and operational risk indicators, including stress, conflict, cognitive load, and repeated issues.
@@ -237,6 +238,8 @@ CODE
 Main implementation file:
 magsbho_ml_v3_governance_model.py
 
+I also implemented the machine learning extension (magsbho_ml_v3_governance_model.py), including a multi-class classification model (Logistic Regression and Decision Tree) evaluated on accuracy, precision, and recall, with a specific focus on maximizing recall for escalation scenarios. The model predicts governance actions (routine support, support and monitor, escalate to human) and is designed to minimize false negatives in high-risk conditions, which is critical for safety.
+
 RELATED PROJECTt
 This model connects to:
 ISPS-VETA — clinical behavioral health decision support system
@@ -271,27 +274,16 @@ We compared governance-constrained decisions to a simple single-agent baseline a
 ---
 
 ## Human Validation (Virtual Analog Astronaut Missions)
-
-(UNCHANGED CONTENT — KEEP AS IS)
-
----
-
-## Safety-Relevant Interpretation
-
-(UNCHANGED CONTENT — KEEP AS IS)
-
----
-
-## Limitations & Future Work
-
-(UNCHANGED CONTENT — KEEP AS IS)
+The MAGSBHO system was validated in virtual analog astronaut crew simulations conducted through MMAARS (n≈45), designed to replicate isolated, confined, and extreme (I.C.E.) mission conditions. Scenarios included elevated stress, interpersonal conflict, and cognitive load to test system performance under realistic operational constraints.
+The ML governance model and TRIAD agents were evaluated on decision alignment, particularly in escalation scenarios. The system demonstrated consistent alignment with expected human oversight pathways, reinforcing its role as a governance-constrained, human-in-the-loop safety support system rather than an autonomous decision-maker.
 
 ---
 
 ## Future Work
 - will evaluate model predictions against human expert decisions in in-person analog astronaut missions to assess real-world reliability and safety alignment.
 - Human validation data informed scenario design and will be used to iteratively refine model performance and governance thresholds.
-- test cross-validation, uncertainty estimation, and robustness testing across larger datasets
+
+- test cross-validation, uncertainty estimation, and robustness testing across larger datasets to ensure reliability under distribution shift and high-risk conditions.”
 
 ---
 
@@ -310,6 +302,14 @@ Observed failure modes:
 Mitigation strategies include:
 - conservative escalation bias  
 - governance override layer ensuring safety under uncertainty  
+
+FAILURE MODES AND SAFETY CONSIDERATIONS
+False negatives in escalation → critical risk
+mitigated by prioritizing recall
+Distribution shift → model trained on simulated data
+requires real-world validation
+Over-reliance on model outputs → mitigated through human-in-the-loop governance
+Limited dataset size → current model is a prototype; future work includes scaling and validation
 
 ---
 
