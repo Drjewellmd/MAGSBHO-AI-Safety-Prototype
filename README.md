@@ -175,12 +175,72 @@ We extended the model to a multi-class ML system predicting governance actions, 
 ### Multi-Class ML Governance Extension
 
 We extended the machine learning component to a multi-class model predicting governance actions: **routine support**, **support and monitor**, and **escalate to human**.
-
 This improves alignment between machine learning outputs and the MAGSBHO governance layer by mapping data-driven risk signals directly to safety-constrained decision pathways.
-
 ![Multi-Class ML Governance Model Output](images/ml_v2_resultss.jpeg)
 
 **Multi-Class ML Governance Model Output.** Preliminary model output showing governance-action predictions based on stress, conflict, cognitive load, and repeated issue features. Predictions are used strictly as decision-support signals and do not replace governance-layer control or human oversight.
+Machine Learning Extension (ML v3 — Governance Model)
+The MAGSBHO system includes a machine learning extension (ML v3) designed to support governance-constrained decision-making in safety-critical environments.
+This model predicts appropriate governance actions based on behavioral and operational risk indicators, including stress, conflict, cognitive load, and repeated issues.
+
+MODEL OBJECTIVE 
+To classify scenarios into one of three governance-aligned actions:
+- Routine Support → normal operational guidance
+- Support and Monitor → elevated attention with continued observation
+- Escalate to Human → high-risk condition requiring immediate human intervention
+
+MODEL DESIGN 
+Multi-class classification model
+Models tested:
+- Logistic Regression
+- Decision Tree (selected for safety-aligned performance)
+
+Key features:
+- Stress level
+- Conflict level
+- Cognitive load
+- Repeated distress indicators
+
+Evaluation focus:
+- Accuracy
+- Recall on escalation class (critical safety metric)
+- Precision
+
+SAFETY_CRITICAL DESIGN PRINCIPLE
+The model is optimized to minimize false negatives in escalation scenarios, prioritizing safety over raw accuracy.
+This ensures that high-risk conditions are not missed, even at the cost of increased false positives.
+
+GOVERNANCE INTEGRATION 
+The ML model operates strictly within the MAGSBHO governance layer:
+- Outputs are bounded to predefined actions (monitor, guide, escalate)
+- All escalation decisions are routed through human-in-the-loop oversight
+- The system does not operate autonomously
+
+SiIMULATION & TESTING
+- Tested across structured simulated scenarios
+- Designed for deployment in:
+- Analog astronaut missions
+- Isolated, confined, and extreme (I.C.E.) environments
+- Validation aligned with MMAARS training frameworks
+
+RESULTS
+Model outputs include:
+- Confusion matrix
+- Classification report
+- Scenario-based predictions
+- CSV export of evaluation metrics
+
+OUTPUT FILE:
+magsbho_ml_v3_results.csv
+
+CODE
+Main implementation file:
+magsbho_ml_v3_governance_model.py
+
+RELATED PROJECTt
+This model connects to:
+ISPS-VETA — clinical behavioral health decision support system
+Extends governance-constrained AI into clinical and psychological domains
 
 ## Safety Performance Metrics
 
@@ -294,6 +354,11 @@ Future work will focus on:
 - IRB-approved real-world deployment  
 
 ---
+FUTURE WORK
+- Integration with SHAP (SHapley Additive exPlanations) for interpretability
+- Expansion to multi-agent coordination within TRIAD architecture
+- Real-world validation in in-person analog astronaut missions (2026)
+- Integration with ISPS-VETA as a clinical decision-support agent
 
 ## Run the Scenario Runner
 
