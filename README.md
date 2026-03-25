@@ -289,14 +289,10 @@ We compared governance-constrained decisions to a simple single-agent baseline a
 ---
 
 ## Future Work
+- will evaluate model predictions against human expert decisions in in-person analog astronaut missions to assess real-world reliability and safety alignment.
+- Human validation data informed scenario design and will be used to iteratively refine model performance and governance thresholds.
+- test cross-validation, uncertainty estimation, and robustness testing across larger datasets
 
-(UNCHANGED CONTENT — KEEP AS IS)
-
-Future work will evaluate model predictions against human expert decisions in in-person analog astronaut missions to assess real-world reliability and safety alignment.
-
-Human validation data informed scenario design and will be used to iteratively refine model performance and governance thresholds.
-
----
 ---
 
 ## Advanced ML Safety Evaluation (Research-Oriented Extensions)
@@ -318,9 +314,8 @@ Mitigation strategies include:
 ---
 
 ### Safety Tradeoff (False Negatives vs False Positives)
-The model is intentionally calibrated to prioritize **recall over precision** for escalation decisions, minimizing false negatives in high-risk conditions at the cost of acceptable false positives.  
-This reflects safety-critical system design principles, where missed risks are more dangerous than unnecessary escalation.
-
+The model is intentionally calibrated to prioritize **recall over precision** for escalation decisions, minimizing false negatives in high-risk conditions at the cost of acceptable false positives. This reflects safety-critical system design principles, where missed risks are more dangerous than unnecessary escalation.
+Model evaluation prioritizes safety-critical recall and will be extended with formal validation pipelines.
 ---
 
 ### Uncertainty Handling
