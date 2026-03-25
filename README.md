@@ -340,6 +340,72 @@ Preliminary comparison suggests alignment between model escalation decisions and
 Formal validation against expert human judgment is planned in upcoming in-person analog astronaut missions.
 
 ---
+## Machine Learning Extension (ML v3 — Governance Model) - UPDATED
+
+The MAGSBHO system includes a machine learning extension (ML v3) designed to support governance-constrained decision-making in safety-critical environments.
+This model predicts appropriate governance actions based on behavioral and operational risk indicators, including stress, conflict, cognitive load, and repeated issues.
+
+MODEL OBJECTIVE
+To classify scenarios into one of three governance-aligned actions:
+- Routine Support → normal operational guidance
+- Support and Monitor → elevated observation and support
+- Escalate to Human → high-risk condition requiring immediate human intervention
+
+MODEL DESIGN
+Multi-class classification model
+Models evaluated:
+- Logistic Regression
+- Decision Tree (selected for safety-aligned performance)
+
+Key features:
+- Stress level
+- Conflict level
+-Cognitive load
+- Repeated distress indicators
+
+Evaluation & Results
+Model performance was evaluated using:
+- Accuracy
+- Precision
+- Recall on escalation class (primary safety metric)
+- 5-fold cross-validation to assess generalization
+The model is optimized to prioritize recall in escalation scenarios, ensuring high-risk conditions are not missed.
+
+Output:
+magsbho_ml_v3_results.csv
+
+Safety-Critical Design Principle
+The model is explicitly designed to:
+- Minimize false negatives in escalation scenarios
+- Operate within bounded governance constraints
+- Support—not replace—human decision-making
+All escalation decisions are routed through human-in-the-loop oversight.
+
+GOVERNANCE INTEGRATION:
+The ML model is embedded within the MAGSBHO governance framework:
+- Outputs constrained to predefined actions (monitor, guide, escalate)
+- Integrated with TRIAD AI agents (KIRK, EVE, SpaceGuardianGPT)
+- Aligned with EarthStar “Do No Harm” safety protocol
+- Trained under MMAARSstar non-tokenized data governance principles
+
+VALIDATION CONTECT: 
+The system has been validated in virtual analog astronaut crew simulations (n≈45) under MMAARS, replicating isolated, confined, and extreme (I.C.E.) mission conditions, including stress, conflict, and cognitive load scenarios.
+Results demonstrated alignment between model predictions and expected human oversight pathways, supporting its role as a governance-constrained, human-in-the-loop safety support system.
+
+FAILURE MODES AND LIMITATIONS
+- Potential false negatives in escalation → mitigated via recall prioritization
+- Simulated dataset → requires real-world validation (planned in analog missions)
+- Limited dataset size → future work includes scaling and robustness testing
+- Distribution shift risk → addressed through human-in-the-loop oversight
+
+CODE
+magsbho_ml_v3_governance_model.py
+
+FUTURE WORK: 
+- Integration with SHAP (SHapley Additive exPlanations) for interpretability
+- Expanded validation in in-person analog astronaut missions (2026)
+- Integration with ISPS-VETA clinical decision-support system
+- Cross-domain generalization and robustness testing
 
 ### Experimental Framing
 This work represents an initial experimental framework for evaluating governance-constrained AI systems.  
